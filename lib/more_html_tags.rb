@@ -1,5 +1,4 @@
 require "more_html_tags/version"
+require 'more_html_tags/html_tags_helpers'
 
-module MoreHtmlTags
-  # Your code goes here...
-end
+ActionView::Base.send :include, HTMLTagsHelpers
